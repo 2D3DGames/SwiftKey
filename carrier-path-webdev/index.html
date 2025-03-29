@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Path Recommendation System</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>CareerGuide<span>AI</span></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Discover Your Ideal Career Path</h1>
+                <p>AI-powered career recommendations based on your skills, education, and interests</p>
+                <button class="cta-btn" id="startAssessment">Start Assessment</button>
+            </div>
+            <div class="hero-image">
+                <img src="images/career-path.svg" alt="Career Path Illustration">
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About CareerGuideAI</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>CareerGuideAI is an intelligent career recommendation system that helps you navigate the complex landscape of career choices. Our AI-powered platform analyzes your unique profile to suggest the most suitable career paths for you.</p>
+                    <p>We combine real-time industry insights, skill gap analysis, and personalized learning resources to guide you toward a fulfilling career that aligns with your potential.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/about-us.svg" alt="About Us Illustration">
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2>Key Features</h2>
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Career Path Analysis</h3>
+                    <p>Get personalized career recommendations based on your skills, education, and interests.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>AI Chatbot Assistant</h3>
+                    <p>Engage with our AI chatbot for real-time career guidance and answers to your questions.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-search"></i>
+                    <h3>Industry Insights</h3>
+                    <p>Access up-to-date information about job trends, requirements, and growth potential.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Learning Resources</h3>
+                    <p>Discover tailored resources to help you acquire the skills needed for your desired career.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="assessment" class="assessment hidden">
+            <h2>Career Assessment</h2>
+            <div class="assessment-container">
+                <div class="assessment-form">
+                    <h3>Tell us about yourself</h3>
+                    <form id="userProfileForm">
+                        <div class="form-group">
+                            <label for="education">Highest Education Level</label>
+                            <select id="education" required>
+                                <option value="" disabled selected>Select your education level</option>
+                                <option value="high_school">High School</option>
+                                <option value="associate">Associate Degree</option>
+                                <option value="bachelor">Bachelor's Degree</option>
+                                <option value="master">Master's Degree</option>
+                                <option value="phd">PhD or Doctorate</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="field">Field of Study/Major</label>
+                            <input type="text" id="field" placeholder="e.g., Computer Science, Business, etc.">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Technical Skills (Select all that apply)</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="programming" name="skills">
+                                    <label for="programming">Programming</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="data_analysis" name="skills">
+                                    <label for="data_analysis">Data Analysis</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="design" name="skills">
+                                    <label for="design">Design</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="marketing" name="skills">
+                                    <label for="marketing">Marketing</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="finance" name="skills">
+                                    <label for="finance">Finance</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="interests">Career Interests</label>
+                            <textarea id="interests" placeholder="Describe your career interests, preferences, and goals..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="experience">Years of Work Experience</label>
+                            <input type="number" id="experience" min="0" max="50" placeholder="Enter number of years">
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Get Recommendations</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="recommendations" class="recommendations hidden">
+            <h2>Your Career Recommendations</h2>
+            <div id="recommendationsContainer" class="recommendations-container">
+                <!-- Career recommendations will be inserted here by JavaScript -->
+            </div>
+            
+            <div class="job-opportunities">
+                <h3>Available Job Opportunities</h3>
+                <div class="job-board" id="jobBoard">
+                    <div class="job-filters">
+                        <select id="jobLocation" class="job-filter">
+                            <option value="">All Locations</option>
+                            <option value="remote">Remote</option>
+                            <option value="onsite">On-site</option>
+                            <option value="hybrid">Hybrid</option>
+                        </select>
+                        <select id="jobType" class="job-filter">
+                            <option value="">All Types</option>
+                            <option value="fulltime">Full-time</option>
+                            <option value="parttime">Part-time</option>
+                            <option value="contract">Contract</option>
+                        </select>
+                        <button id="filterJobs" class="filter-btn">Filter Jobs</button>
+                    </div>
+                    
+                    <div class="job-listings" id="jobListings">
+                        <!-- Job listings will be dynamically populated here -->
+                    </div>
+                    
+                    <div class="external-job-sites">
+                        <h4>Find More Opportunities On:</h4>
+                        <div class="job-site-links">
+                            <a href="https://www.linkedin.com/jobs" target="_blank" class="job-site-link">
+                                <i class="fab fa-linkedin"></i> LinkedIn Jobs
+                            </a>
+                            <a href="https://www.indeed.com" target="_blank" class="job-site-link">
+                                <i class="fas fa-search"></i> Indeed
+                            </a>
+                            <a href="https://www.glassdoor.com/Job" target="_blank" class="job-site-link">
+                                <i class="fas fa-door-open"></i> Glassdoor
+                            </a>
+                            <a href="https://www.monster.com" target="_blank" class="job-site-link">
+                                <i class="fas fa-briefcase"></i> Monster
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="learning-progress" class="learning-progress hidden">
+            <h2>Your Learning Journey</h2>
+            <div class="progress-container">
+                <div class="progress-overview">
+                    <div class="progress-stats">
+                        <div class="stat-card">
+                            <i class="fas fa-book-reader"></i>
+                            <h4>Courses Started</h4>
+                            <p id="coursesStarted">0</p>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h4>Courses Completed</h4>
+                            <p id="coursesCompleted">0</p>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-trophy"></i>
+                            <h4>Quizzes Passed</h4>
+                            <p id="quizzesPassed">0</p>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-chart-line"></i>
+                            <h4>Overall Progress</h4>
+                            <p id="overallProgress">0%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="courses-progress">
+                    <h3>Your Courses</h3>
+                    <div id="coursesList" class="courses-list">
+                        <!-- Courses will be dynamically added here -->
+                    </div>
+                </div>
+
+                <div id="quizSection" class="quiz-section hidden">
+                    <div class="quiz-header">
+                        <h3>Course Quiz</h3>
+                        <p id="quizDescription"></p>
+                    </div>
+                    <div id="quizContent" class="quiz-content">
+                        <!-- Quiz questions will be dynamically added here -->
+                    </div>
+                    <div class="quiz-actions">
+                        <button id="submitQuiz" class="submit-btn">Submit Quiz</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="chatbot" class="chatbot">
+            <div class="chatbot-toggle">
+                <i class="fas fa-comments"></i>
+            </div>
+            <div class="chatbot-container hidden">
+                <div class="chatbot-header">
+                    <h3>Career Assistant</h3>
+                    <button class="close-btn"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="chatbot-messages" id="chatbotMessages">
+                    <div class="message bot-message">
+                        <p>Hello! I'm your career guidance assistant. How can I help you today?</p>
+                    </div>
+                </div>
+                <div class="chatbot-input">
+                    <input type="text" id="userInput" placeholder="Ask me about careers...">
+                    <button id="sendMessage"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>support@careerguideai.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>123 AI Avenue, Tech City, TC 12345</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>CareerGuide<span>AI</span></h2>
+                <p>Your path to the perfect career</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="link-group">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="link-group">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 CareerGuideAI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 

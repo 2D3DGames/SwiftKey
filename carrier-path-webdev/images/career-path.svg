@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="600px" viewBox="0 0 800 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Career Path Illustration</title>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#4A6BFF" offset="0%"></stop>
+            <stop stop-color="#8A4FFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#4A6BFF" offset="0%"></stop>
+            <stop stop-color="#8A4FFF" offset="60%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Career-Path" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <!-- Background Elements -->
+        <circle id="bg-circle-1" fill="#E2E9FF" cx="650" cy="120" r="80"></circle>
+        <circle id="bg-circle-2" fill="#F4F7FF" cx="200" cy="500" r="100"></circle>
+        
+        <!-- Path -->
+        <path d="M100,500 C150,450 200,480 250,430 C300,380 350,400 400,350 C450,300 500,320 550,270 C600,220 650,240 700,190" id="path" stroke="url(#linearGradient-1)" stroke-width="6" stroke-linecap="round" stroke-dasharray="1, 15"></path>
+        
+        <!-- Milestones -->
+        <circle id="milestone-1" fill="#FFFFFF" stroke="url(#linearGradient-2)" stroke-width="4" cx="100" cy="500" r="20"></circle>
+        <circle id="milestone-2" fill="#FFFFFF" stroke="url(#linearGradient-2)" stroke-width="4" cx="250" cy="430" r="20"></circle>
+        <circle id="milestone-3" fill="#FFFFFF" stroke="url(#linearGradient-2)" stroke-width="4" cx="400" cy="350" r="20"></circle>
+        <circle id="milestone-4" fill="#FFFFFF" stroke="url(#linearGradient-2)" stroke-width="4" cx="550" cy="270" r="20"></circle>
+        <circle id="milestone-5" fill="#FFFFFF" stroke="url(#linearGradient-2)" stroke-width="4" cx="700" cy="190" r="20"></circle>
+        
+        <!-- Icons in Milestones -->
+        <text id="icon-1" font-family="FontAwesome" font-size="16" fill="#4A6BFF" x="93" y="505">
+            <tspan>&#xf19d;</tspan>
+        </text>
+        <text id="icon-2" font-family="FontAwesome" font-size="16" fill="#4A6BFF" x="244" y="435">
+            <tspan>&#xf0b1;</tspan>
+        </text>
+        <text id="icon-3" font-family="FontAwesome" font-size="16" fill="#4A6BFF" x="394" y="355">
+            <tspan>&#xf0d0;</tspan>
+        </text>
+        <text id="icon-4" font-family="FontAwesome" font-size="16" fill="#4A6BFF" x="544" y="275">
+            <tspan>&#xf21e;</tspan>
+        </text>
+        <text id="icon-5" font-family="FontAwesome" font-size="16" fill="#4A6BFF" x="694" y="195">
+            <tspan>&#xf005;</tspan>
+        </text>
+        
+        <!-- Character -->
+        <g id="character" transform="translate(50, 400)">
+            <!-- Head -->
+            <circle id="head" fill="#FFD7B5" cx="40" cy="30" r="30"></circle>
+            
+            <!-- Face -->
+            <circle id="eye-left" fill="#333333" cx="30" cy="25" r="3"></circle>
+            <circle id="eye-right" fill="#333333" cx="50" cy="25" r="3"></circle>
+            <path d="M35,40 C38,43 42,43 45,40" id="smile" stroke="#333333" stroke-width="2" stroke-linecap="round"></path>
+            
+            <!-- Body -->
+            <rect id="body" fill="#4A6BFF" x="20" y="60" width="40" height="60" rx="10"></rect>
+            
+            <!-- Arms -->
+            <rect id="arm-left" fill="#FFD7B5" x="10" y="65" width="10" height="40" rx="5"></rect>
+            <rect id="arm-right" fill="#FFD7B5" x="60" y="65" width="10" height="40" rx="5"></rect>
+            
+            <!-- Legs -->
+            <rect id="leg-left" fill="#333333" x="25" y="120" width="10" height="40" rx="5"></rect>
+            <rect id="leg-right" fill="#333333" x="45" y="120" width="10" height="40" rx="5"></rect>
+            
+            <!-- Briefcase -->
+            <rect id="briefcase" fill="#8A4FFF" x="60" y="95" width="20" height="15" rx="2"></rect>
+            <rect id="briefcase-handle" fill="#8A4FFF" x="65" y="90" width="10" height="5" rx="2"></rect>
+        </g>
+        
+        <!-- Buildings -->
+        <g id="buildings" transform="translate(500, 300)">
+            <rect id="building-1" fill="#E2E9FF" stroke="#4A6BFF" stroke-width="2" x="0" y="50" width="60" height="150" rx="2"></rect>
+            <rect id="building-2" fill="#F4F7FF" stroke="#4A6BFF" stroke-width="2" x="70" y="100" width="40" height="100" rx="2"></rect>
+            <rect id="building-3" fill="#E2E9FF" stroke="#4A6BFF" stroke-width="2" x="120" y="70" width="50" height="130" rx="2"></rect>
+            
+            <!-- Windows -->
+            <rect id="window-1" fill="#FFFFFF" stroke="#4A6BFF" x="10" y="70" width="15" height="15" rx="2"></rect>
+            <rect id="window-2" fill="#FFFFFF" stroke="#4A6BFF" x="35" y="70" width="15" height="15" rx="2"></rect>
+            <rect id="window-3" fill="#FFFFFF" stroke="#4A6BFF" x="10" y="95" width="15" height="15" rx="2"></rect>
+            <rect id="window-4" fill="#FFFFFF" stroke="#4A6BFF" x="35" y="95" width="15" height="15" rx="2"></rect>
+            <rect id="window-5" fill="#FFFFFF" stroke="#4A6BFF" x="10" y="120" width="15" height="15" rx="2"></rect>
+            <rect id="window-6" fill="#FFFFFF" stroke="#4A6BFF" x="35" y="120" width="15" height="15" rx="2"></rect>
+            
+            <rect id="window-7" fill="#FFFFFF" stroke="#4A6BFF" x="80" y="115" width="10" height="10" rx="1"></rect>
+            <rect id="window-8" fill="#FFFFFF" stroke="#4A6BFF" x="95" y="115" width="10" height="10" rx="1"></rect>
+            <rect id="window-9" fill="#FFFFFF" stroke="#4A6BFF" x="80" y="135" width="10" height="10" rx="1"></rect>
+            <rect id="window-10" fill="#FFFFFF" stroke="#4A6BFF" x="95" y="135" width="10" height="10" rx="1"></rect>
+            
+            <rect id="window-11" fill="#FFFFFF" stroke="#4A6BFF" x="130" y="85" width="12" height="12" rx="1"></rect>
+            <rect id="window-12" fill="#FFFFFF" stroke="#4A6BFF" x="150" y="85" width="12" height="12" rx="1"></rect>
+            <rect id="window-13" fill="#FFFFFF" stroke="#4A6BFF" x="130" y="105" width="12" height="12" rx="1"></rect>
+            <rect id="window-14" fill="#FFFFFF" stroke="#4A6BFF" x="150" y="105" width="12" height="12" rx="1"></rect>
+        </g>
+        
+        <!-- Thought Bubbles -->
+        <g id="thought-bubbles">
+            <circle id="bubble-1" fill="#FFFFFF" stroke="#4A6BFF" stroke-width="2" cx="150" cy="350" r="25"></circle>
+            <circle id="bubble-2" fill="#FFFFFF" stroke="#4A6BFF" stroke-width="2" cx="200" cy="300" r="20"></circle>
+            <circle id="bubble-3" fill="#FFFFFF" stroke="#4A6BFF" stroke-width="2" cx="250" cy="270" r="15"></circle>
+            
+            <text id="code-icon" font-family="FontAwesome" font-size="16" fill="#4A6BFF" x="142" y="355">
+                <tspan>&#xf121;</tspan>
+            </text>
+            <text id="chart-icon" font-family="FontAwesome" font-size="16" fill="#4A6BFF" x="193" y="305">
+                <tspan>&#xf200;</tspan>
+            </text>
+            <text id="design-icon" font-family="FontAwesome" font-size="16" fill="#4A6BFF" x="244" y="275">
+                <tspan>&#xf1fc;</tspan>
+            </text>
+        </g>
+        
+        <!-- Flags -->
+        <g id="flag" transform="translate(700, 190)">
+            <rect id="flag-pole" fill="#4A6BFF" x="0" y="-40" width="3" height="40"></rect>
+            <path id="flag-shape" fill="#8A4FFF" d="M3,0 L3,-40 L20,-30 L3,-20 Z"></path>
+        </g>
+    </g>
+</svg> 

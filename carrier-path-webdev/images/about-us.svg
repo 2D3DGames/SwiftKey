@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="400px" viewBox="0 0 600 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>About Us Illustration</title>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#4A6BFF" offset="0%"></stop>
+            <stop stop-color="#8A4FFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#4A6BFF" offset="0%"></stop>
+            <stop stop-color="#8A4FFF" offset="60%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="About-Us" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <!-- Background Elements -->
+        <circle id="bg-circle-1" fill="#E2E9FF" cx="480" cy="100" r="60"></circle>
+        <circle id="bg-circle-2" fill="#F4F7FF" cx="120" cy="320" r="80"></circle>
+        
+        <!-- Central Element - Career Advisory -->
+        <g id="career-advisory" transform="translate(250, 150)">
+            <circle id="central-circle" fill="#FFFFFF" stroke="url(#linearGradient-1)" stroke-width="4" cx="50" cy="50" r="50"></circle>
+            
+            <text id="brain-icon" font-family="FontAwesome" font-size="40" fill="url(#linearGradient-1)" x="30" y="65">
+                <tspan>&#xf0eb;</tspan>
+            </text>
+        </g>
+        
+        <!-- Connected Elements -->
+        <g id="connected-elements">
+            <!-- Element 1: Skills Analysis -->
+            <g id="skills-element" transform="translate(100, 100)">
+                <circle id="skills-circle" fill="#FFFFFF" stroke="#4A6BFF" stroke-width="2" cx="30" cy="30" r="30"></circle>
+                <text id="skills-icon" font-family="FontAwesome" font-size="20" fill="#4A6BFF" x="20" y="35">
+                    <tspan>&#xf085;</tspan>
+                </text>
+                <text id="skills-text" font-family="Arial" font-size="12" fill="#333333" x="0" y="80" text-anchor="middle">
+                    <tspan x="30">Skills Analysis</tspan>
+                </text>
+            </g>
+            
+            <!-- Connection line 1 -->
+            <path d="M160,130 C200,140 250,150 250,150" id="connection-1" stroke="#4A6BFF" stroke-width="2" stroke-dasharray="5,5"></path>
+            
+            <!-- Element 2: Education Tracking -->
+            <g id="education-element" transform="translate(150, 50)">
+                <circle id="education-circle" fill="#FFFFFF" stroke="#4A6BFF" stroke-width="2" cx="30" cy="30" r="30"></circle>
+                <text id="education-icon" font-family="FontAwesome" font-size="20" fill="#4A6BFF" x="20" y="35">
+                    <tspan>&#xf19d;</tspan>
+                </text>
+                <text id="education-text" font-family="Arial" font-size="12" fill="#333333" x="0" y="80" text-anchor="middle">
+                    <tspan x="30">Education</tspan>
+                </text>
+            </g>
+            
+            <!-- Connection line 2 -->
+            <path d="M210,80 C230,100 250,140 250,150" id="connection-2" stroke="#4A6BFF" stroke-width="2" stroke-dasharray="5,5"></path>
+            
+            <!-- Element 3: Market Trends -->
+            <g id="market-element" transform="translate(370, 50)">
+                <circle id="market-circle" fill="#FFFFFF" stroke="#4A6BFF" stroke-width="2" cx="30" cy="30" r="30"></circle>
+                <text id="market-icon" font-family="FontAwesome" font-size="20" fill="#4A6BFF" x="20" y="35">
+                    <tspan>&#xf201;</tspan>
+                </text>
+                <text id="market-text" font-family="Arial" font-size="12" fill="#333333" x="0" y="80" text-anchor="middle">
+                    <tspan x="30">Market Trends</tspan>
+                </text>
+            </g>
+            
+            <!-- Connection line 3 -->
+            <path d="M370,80 C350,100 320,140 300,150" id="connection-3" stroke="#4A6BFF" stroke-width="2" stroke-dasharray="5,5"></path>
+            
+            <!-- Element 4: Personality -->
+            <g id="personality-element" transform="translate(420, 130)">
+                <circle id="personality-circle" fill="#FFFFFF" stroke="#4A6BFF" stroke-width="2" cx="30" cy="30" r="30"></circle>
+                <text id="personality-icon" font-family="FontAwesome" font-size="20" fill="#4A6BFF" x="20" y="35">
+                    <tspan>&#xf118;</tspan>
+                </text>
+                <text id="personality-text" font-family="Arial" font-size="12" fill="#333333" x="0" y="80" text-anchor="middle">
+                    <tspan x="30">Personality</tspan>
+                </text>
+            </g>
+            
+            <!-- Connection line 4 -->
+            <path d="M420,160 C390,160 350,160 300,150" id="connection-4" stroke="#4A6BFF" stroke-width="2" stroke-dasharray="5,5"></path>
+            
+            <!-- Element 5: Career Paths -->
+            <g id="career-element" transform="translate(370, 210)">
+                <circle id="career-circle" fill="#FFFFFF" stroke="#4A6BFF" stroke-width="2" cx="30" cy="30" r="30"></circle>
+                <text id="career-icon" font-family="FontAwesome" font-size="20" fill="#4A6BFF" x="20" y="35">
+                    <tspan>&#xf0b1;</tspan>
+                </text>
+                <text id="career-text" font-family="Arial" font-size="12" fill="#333333" x="0" y="80" text-anchor="middle">
+                    <tspan x="30">Career Paths</tspan>
+                </text>
+            </g>
+            
+            <!-- Connection line 5 -->
+            <path d="M370,240 C350,220 320,180 300,200" id="connection-5" stroke="#4A6BFF" stroke-width="2" stroke-dasharray="5,5"></path>
+            
+            <!-- Element 6: Learning Resources -->
+            <g id="learning-element" transform="translate(150, 210)">
+                <circle id="learning-circle" fill="#FFFFFF" stroke="#4A6BFF" stroke-width="2" cx="30" cy="30" r="30"></circle>
+                <text id="learning-icon" font-family="FontAwesome" font-size="20" fill="#4A6BFF" x="20" y="35">
+                    <tspan>&#xf02d;</tspan>
+                </text>
+                <text id="learning-text" font-family="Arial" font-size="12" fill="#333333" x="0" y="80" text-anchor="middle">
+                    <tspan x="30">Learning Resources</tspan>
+                </text>
+            </g>
+            
+            <!-- Connection line 6 -->
+            <path d="M210,240 C230,220 250,180 250,200" id="connection-6" stroke="#4A6BFF" stroke-width="2" stroke-dasharray="5,5"></path>
+        </g>
+        
+        <!-- AI Element -->
+        <g id="ai-element" transform="translate(250, 270)">
+            <rect id="ai-rect" fill="#F4F7FF" stroke="url(#linearGradient-2)" stroke-width="2" x="0" y="0" width="100" height="60" rx="10"></rect>
+            <text id="ai-text" font-family="Arial" font-size="14" font-weight="bold" fill="#4A6BFF" x="50" y="25" text-anchor="middle">
+                <tspan>AI-Powered</tspan>
+            </text>
+            <text id="recommendations-text" font-family="Arial" font-size="12" fill="#333333" x="50" y="45" text-anchor="middle">
+                <tspan>Recommendations</tspan>
+            </text>
+        </g>
+        
+        <!-- Connection from Central to AI -->
+        <path d="M300,250 L300,270" id="central-to-ai" stroke="url(#linearGradient-1)" stroke-width="2"></path>
+        
+        <!-- Decorative Elements -->
+        <circle id="dot-1" fill="#4A6BFF" opacity="0.2" cx="50" cy="50" r="5"></circle>
+        <circle id="dot-2" fill="#4A6BFF" opacity="0.2" cx="80" cy="240" r="5"></circle>
+        <circle id="dot-3" fill="#4A6BFF" opacity="0.2" cx="450" cy="240" r="5"></circle>
+        <circle id="dot-4" fill="#4A6BFF" opacity="0.2" cx="500" cy="300" r="5"></circle>
+        <circle id="dot-5" fill="#4A6BFF" opacity="0.2" cx="550" cy="150" r="5"></circle>
+        <circle id="dot-6" fill="#4A6BFF" opacity="0.2" cx="350" cy="350" r="5"></circle>
+    </g>
+</svg> 
